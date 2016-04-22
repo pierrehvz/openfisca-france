@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1
+
+* Force version number incrementation through CI
+* Force changelog editing through CI
+* Publish tag after merging
+* Publish on pypi after tagging
+
 ## 1.0
 
 * Introduction of `invalidite`
