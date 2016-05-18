@@ -25,7 +25,6 @@ setup(
     url = 'https://github.com/openfisca/openfisca-france',
 
     data_files = [
-        ('share/locale/fr/LC_MESSAGES', ['openfisca_france/i18n/fr/LC_MESSAGES/openfisca-france.mo']),
         ('share/openfisca/openfisca-france', ['CHANGELOG.md', 'LICENSE', 'README.md']),
         ],
     extras_require = {
@@ -44,7 +43,6 @@ setup(
         },
     include_package_data = True,  # Will read MANIFEST.in
     install_requires = [
-        'Babel >= 0.9.4',
         'Biryani[datetimeconv] >= 0.10.4',
         'numpy >= 1.6',
         'OpenFisca-Core ~= 1.0',
