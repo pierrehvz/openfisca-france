@@ -6,8 +6,10 @@ import math
 
 from numpy import minimum as min_
 
-from ....base import *  # noqa analysis:ignore
-from .base import apply_bareme_for_relevant_type_sal
+from openfisca_france.model.base import *  # noqa analysis:ignore
+from openfisca_france.model.prelevements_obligatoires.prelevements_sociaux.contributions_sociales.base import montant_csg_crds
+from openfisca_france.model.prelevements_obligatoires.prelevements_sociaux.contributions_sociales.base import montant_csg_crds
+from openfisca_france.model.prelevements_obligatoires.prelevements_sociaux.cotisations_sociales.base import apply_bareme_for_relevant_type_sal
 
 
 class allocations_temporaires_invalidite(Variable):

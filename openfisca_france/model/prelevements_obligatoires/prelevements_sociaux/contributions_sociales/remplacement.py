@@ -7,8 +7,10 @@ import logging
 from numpy import maximum as max_, minimum as min_
 
 
-from ....base import *  # noqa analysis:ignore
-from .base import montant_csg_crds
+from openfisca_france.model.base import *  # noqa analysis:ignore
+from openfisca_france.model.prelevements_obligatoires.prelevements_sociaux.contributions_sociales.base import montant_csg_crds
+from openfisca_france.model.prelevements_obligatoires.prelevements_sociaux.contributions_sociales.base import montant_csg_crds
+from openfisca_france.model.prelevements_obligatoires.prelevements_sociaux.contributions_sociales.base import montant_csg_crds
 
 
 log = logging.getLogger(__name__)
