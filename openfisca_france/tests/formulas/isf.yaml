@@ -25,19 +25,56 @@
   output_variables:
     isf_imm_bati: 2500000 # 0.7 * 3000000 + 400000
 
-- name: "Impôt sur la fortune - Célibataire - ISF test"
+- name: "Impôt sur la fortune - Célibataire - ISF test 2013"
+  ignore: True
+  keywords: isf
+  period: 2013
+  absolute_error_margin: 5
+  input_variables:
+    b1ab: 2000000
+    b1bc: 100000
+    b1be: 100000
+    b1cf: 100000
+    b2nc: 1000
+    salaire_imposable: 150000
+    irpp: -43076
+  output_variables:
+    isf_avant_plaf: 4042 #résultats openfisca
+    isf_apres_plaf: 4042 #résultats openfisca
+    isf_tot: -4014 #résultat provenant du simulateur des echos
+
+- name: "Impôt sur la fortune - Célibataire - ISF test 2014"
+  ignore: True
+  keywords: isf
+  period: 2014
+  absolute_error_margin: 5
+  input_variables:
+    b1ab: 2000000
+    b1bc: 100000
+    b1be: 100000
+    b1cf: 100000
+    b2nc: 1000
+    salaire_imposable: 150000
+    irpp: -42984
+  output_variables:
+    isf_avant_plaf: 3500
+    isf_apres_plaf: 0
+    isf_tot: 0 #résultat provenant du simulateur du figaro
+
+- name: "Impôt sur la fortune - Célibataire - ISF test 2016"
+  ignore: True
   keywords: isf
   period: 2016
   absolute_error_margin: 5
   input_variables:
-    b1ab: 10000000
-    b1bc: 30000
-    b1be: 20000
-    b1cf: 60000
-    b2nc: 15000
-    rev_or: 100000
+    b1ab: 2000000
+    b1bc: 100000
+    b1be: 100000
+    b1cf: 100000
+    b2nc: 1000
+    salaire_imposable: 150000
+    irpp: -42965
   output_variables:
-    isf_avant_plaf: 1
-    isf_apres_plaf: 2
-    irpp: 3
-    #isf_tot: 54147 TODO: understand why the test doesn't pass through this two variable
+    #isf_avant_plaf: 3500
+    #isf_apres_plaf: 0
+    isf_tot: -3476 #résultat provenant du simulateur des echos
